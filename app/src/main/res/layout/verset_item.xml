@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="3dp"
+    android:elevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:contentPadding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:minHeight="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#256F98"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+
+            <TextView
+                android:id="@+id/tvIdVerset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="id verset"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvNameSourat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Sourat Name"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvIdSourat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="id Sourat"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTextAr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="30dp"
+            android:text="text ar"
+            android:textAlignment="center"
+            android:textColor="#256F98"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvTextAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:maxHeight="53dp"
+            android:paddingHorizontal="30dp"
+            android:text="text an"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvTextAn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="30dp"
+            android:text="location"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
